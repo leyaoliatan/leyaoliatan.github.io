@@ -12,9 +12,9 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
+        <h2>Leyao (Lia) Tan</h2>
         <p>
-          <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+          <a href="leyao.tan@ubc.ca">leyao.tan@sauder.ubc.ca</a>
         </p>
       </header>
     </section>
@@ -22,23 +22,31 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Michael. I am a{' '}
-        <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-        alumnus, and the co-founder and CTO of{' '}
-        <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I
-        was VP of Engineering at <a href="https://usesmileid.com">SmileID</a>,
-        co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-        co-founded <a href="https://matroid.com">Matroid</a>.
+        Hi! I am Leyao. I am a Ph.D. student in Quantitative Marketing at{' '}
+        <a href="https://www.sauder.ubc.ca/">Sauder Business School</a>, University of British Columbia (UBC).
+        I hold a Master of Science in Business Administration (Quant Marketing) from{' '}
+        <a href="https://www.acem.sjtu.edu.cn/en/">Antai College of Economics and Management</a>,
+        Shanghai Jiao Tong University (SJTU) and a bachelor&apos;s degree from{' '}
+        <a href="https://en.ruc.edu.cn/">Renmin University of China</a> (RUC).
+      </p>
+      <p>
+        I am passionate about causal inference and machine learning methods and their application
+        in digital marketing, fraud prevention, and climate sustainability.
+      </p>
+      <p>
+        In my free time, I enjoy hiking, rock climbing, painting (watercolor and digital), and{' '}
+        <a href="https://unsplash.com/@liatan">photography</a>, and exploring teas from around the world.
+        I am also a beginner of weightlifting and Muay Thai :).
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? (
-            <Link to="/resume" className="button">
-              Learn More
+          {!window.location.pathname.includes('/about') ? (
+            <Link to="/about" className="button">
+              Learn More About Me
             </Link>
           ) : (
-            <Link to="/about" className="button">
-              About Me
+            <Link to="/contact" className="button">
+              Keep in Touch
             </Link>
           )}
         </li>
@@ -48,7 +56,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.
+        &copy; {new Date().getFullYear()} Leyao Tan. Thanks to <Link to="https://mldangelo.com">Michael D&apos;Angelo</Link> for the template.
       </p>
     </section>
   </section>

@@ -4,29 +4,25 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 
 import Education from '../components/Resume/Education';
-import Experience from '../components/Resume/Experience';
-import Skills from '../components/Resume/Skills';
-import Courses from '../components/Resume/Courses';
-import References from '../components/Resume/References';
-
-import courses from '../data/resume/courses';
+// import Experience from '../components/Resume/Experience';
+// import Courses from '../components/Resume/Courses';
+// import References from '../components/Resume/References';
+// import courses from '../data/resume/courses';
 import degrees from '../data/resume/degrees';
-import work from '../data/resume/work';
-import { skills, categories } from '../data/resume/skills';
+// import work from '../data/resume/work';
 
 // NOTE: sections are displayed in order defined.
 const sections = {
   Education: () => <Education data={degrees} />,
-  Experience: () => <Experience data={work} />,
-  Skills: () => <Skills skills={skills} categories={categories} />,
-  Courses: () => <Courses data={courses} />,
-  References: () => <References />,
+  // Experience: () => <Experience data={work} />,
+  // Courses: () => <Courses data={courses} />,
+  // References: () => <References />,
 };
 
 const Resume = () => (
   <Main
     title="Resume"
-    description="Michael D'Angelo's Resume. Smile Identity, Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook."
+    description="Leyao (Lia) Tan's Resume. Ph.D. student in Quantitative Marketing at Sauder Business School, University of British Columbia (UBC)."
   >
     <article className="post" id="resume">
       <header>

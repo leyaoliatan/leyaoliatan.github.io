@@ -15,8 +15,8 @@
     position: relative;
 
     img {
-      width: 10em;
-      border-radius: 50%;
+      width: 13em; //change this to change image size
+      border-radius: 50%; 
       display: block;
     }
   }
@@ -28,7 +28,7 @@
     }
 
     p {
-      font-size: 0.8em;
+      font-size: 1em; 
     }
   }
 
@@ -42,7 +42,7 @@
       }
 
       p {
-        font-size: 0.7em;
+        font-size: 0.7em; //change this to change font size of email on main page
       }
     }
   }

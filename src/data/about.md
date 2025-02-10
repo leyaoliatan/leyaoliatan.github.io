@@ -1,76 +1,46 @@
-# Intro
-
-I am the co-founder and CTO of [Promptfoo](https://promptfoo.dev), where we're building open-source tools to evaluate, find, and fix vulnerabilities in LLMs. Before Promptfoo, I was the VP of Engineering at [SmileID](https://www.usesmileid.com), where I led the development of tools that have helped over 170 million people in Africa gain access to financial services. I also co-founded [Arthena](https://arthena.com) and [Matroid](https://matroid.com).
-
-In my spare time, I enjoy investing in people and ideas through a [small venture fund](https://skepticalinvestments.biz), focusing on projects with high social impact. If you think I can be helpful to you or your cause, or if you're interested in collaborating, feel free to get in touch.
-
-# Some History
-
-- My parents put a computer in my bedroom in 1993 when I was 3. It was an old Tandy that ran MS-DOS. My favorite games were Street Rod 2, Wolfenstein 3D, and Tom and Jerry. It had a mechanical keyboard and a turbo button. To this day, I still don't know what pressing the turbo button really did.
-- We subscribed to AOL in 1995. I still remember installing it from a floppy disk onto our brand-new Packard Bell. It took years for me to send my first email.
-- In the summer of 1996, my uncle purchased [MegaRace](https://en.wikipedia.org/wiki/MegaRace) from [Media Play](https://en.wikipedia.org/wiki/Media_Play) and installed it on my mom's work computer. I might have endangered her business by using her computer too much.
-- At 7, I discovered the mini-games hidden in Microsoft Office. I also beat Minesweeper on expert for the first time.
-- At 8, my parents bought me a Sony Mavica MVC-FD71 digital camera after I stole their SLR one too many times. It could fit 10 images to a floppy disk at a 0.3MP resolution. I still have it, and it still works. I've been taking photographs ever since, now with a Nikon D750, D800, and occasionally with a Mamiya 6II.
-- At 10, I built my first website with Microsoft FrontPage on our Pentium III [Gateway](https://en.wikipedia.org/wiki/Gateway,_Inc.). My website was terrible.
-- I was 11 when I built my first [Tesla Coil](https://en.wikipedia.org/wiki/Tesla_coil) (without my parents' permission). Over the next few years, I built several more, including one of the first audio modulated coils and one of the first DRSSTCs.
-- When I was 12, I set the all-time high record at my local laser tag facility by reverse engineering the charging station and weapon protocols with a photo-resistor, micro-cassette recorder, and a lot of patience. I was unstoppable.
-- At 13, I went to space camp and fell in love. I went back two more times and promised myself that I'd work in space. I've since helped build three generations of satellites and have contributed to two more.
-- At 14, I was almost expelled for finding a backdoor into my high school's file server and telling everyone but the faculty members about it. Later that year, I figured out how to turn off the internet firewall by editing system registry keys. I anonymously shared my work months later.
-- At 16, I participated in a foreign exchange program in Dortmund, Germany. Since then, I've gone back almost every year.
-- 14 - 17, I played a lot of video games. My favorites included Counter-Strike Source, Command and Conquer 3, Halo 2, and Age of Empires II.
-- At 18, in the summer before college, my friends and I started playing [Muggle Quidditch](<https://en.wikipedia.org/wiki/Quidditch_(sport)>). We went on to start over 8 teams in the [International Quidditch Association](https://en.wikipedia.org/wiki/International_Quidditch_Association), including the [Buffalo Quidditch Society](https://www.facebook.com/buffaloquidditch/). At our height, we were ranked third in the IQA. Although I don't play anymore, you can still see pictures of me holding a broom while wearing a chess camp t-shirt on Facebook.
-- At 19, I took my first graduate course and published my first academic paper.
-- At 20, I co-authored a grant to build a satellite and managed a 60+ person team for the next two years. You can read more about that [here](https://ubnl.space/glados/).
-
-Ask me in person for other stories that I'm afraid to share with the internet.
-
 # I Like
+- Sunshine
+- Forests and Ocean (and Vancouver has both!)
+- Dogs and Cats (though I don't have any pets yet)
+- Tea (I can make you a traditional Chinese Kung Fu tea ceremony if you come over ;))
+- Music from the 70s and 80s
+- Building blocks
+- Cycling
+- Weightlifting
+- Hiking
+- Food (I love exploring cuisines from around the world - Persian food is my current favorite)
 
-- Running
-- Skiing
-- Sailing and the sea
-- Space
-- Summer
-- [Books](https://www.goodreads.com/mdangelo)
-- Colored pencils ([Faber-Castell Polychromos](https://www.faber-castell.com/products/art-and-graphic/polychromos))
-- Podcasts ([The Daily](https://www.nytimes.com/column/the-daily), [The Ezra Klein Show](https://www.nytimes.com/column/ezra-klein-podcast), [Planet Money](https://www.npr.org/sections/money/), [The Indicator](https://www.npr.org/podcasts/510325/the-indicator-from-planet-money), [This American Life](https://www.thisamericanlife.org/), [99% Invisible](https://99percentinvisible.org/episodes/), [The Economist](http://radio.economist.com/), [Radiolab](https://www.wnycstudios.org/shows/radiolab), [Hidden Brain](https://www.npr.org/series/423302056/hidden-brain), [Inquiring Minds](https://inquiring.show), and others)
-- [Good design](/)
-- [Photography](https://instagram.com/dangelosaurus)
 
-# Travel / Geography
+# Once Upon a Time...
+- I was born in Huangshuang Village, China, and moved to Zixing, Hunan Province when I was one year old. Zixing is a very peaceful and scenic tourist town, home to the breathtaking Dongjiang Lake. [See some pictures here](https://www.google.com/search?newwindow=1&sca_esv=d1df69ed15318afd&sxsrf=AHTn8zoDjAmviiK_L1aRRa8OGVMIj1_Esg:1739215900291&q=dongjiang+lake&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjnSuuKZNj-6zieDk_gkn6DL72A7ut7DhWF7xFwTndjmJARkDooRNVvu4Aja6Pa3bifj4CXaS_3qi-N-j6yIDSB4lfcn8z6rxQMK6MvJ30Y82w6s6ltXvSdnDRiacHrIKvwFSbh7w69xtizlPoOYEEbvgsIy3jzg0WkFg5k6_wWcTs8EWw&sa=X&ved=2ahUKEwiTu7KP7LmLAxULOTQIHXWMLwYQtKgLegQIExAB&biw=819&bih=414&dpr=2.5).
 
-- I am originally from Buffalo, New York. I have since lived in Palo Alto, Mountain View, San Francisco, Seattle, and New York City.
-- I've been to approximately 50 countries, some of which I have forgotten, many of which I would like to revisit.
-- In 2016, I visited Canada, Ethiopia, Austria, Germany, Belgium, Ireland, Northern Ireland, Italy, Romania, Sweden, Norway, Svalbard, Panama, Costa Rica, Uganda, Japan, and the UAE, mostly in that order.
-- In 2017, I visited Canada, Japan, Denmark, Germany, Sweden, Estonia, Russia, the Netherlands, Belgium, the U.K., Spain, Iceland, France, Switzerland, Ethiopia, and Luxembourg.
-- In 2018, I visited Canada, France, Italy, Israel, and the U.K.
-- In 2019, I visited Canada, England, France, and Switzerland.
-- In 2020, I traveled barely 20 blocks. I stayed in New York and remodeled an apartment.
-- In 2021, I continued remodeling an apartment.
-- In 2022, I switched jobs and visited the UK, France, Greece, Belgium, Luxembourg, Germany, and Kenya.
-- In 2023, I visited France, the UK, Ireland, and Rwanda.
-- I am an Oregon Trail II enthusiast.
+- From 2016 to 2020, I spent four years in Beijing for my undergraduate studies. This vast, historical city was truly impressive. The Summer Palace was my favorite spot, where the sunset views are particularly [spectacular](https://www.google.com/search?q=summer+palace+sunset+images).
+
+- In 2020, I started my master's journey in Shanghai Jiao Tong Univ and lived in Shanghai for two years. It was here that I met many inspiring mentors and friends, and began my path in quantitative marketing. My favorite secret spot in Shanghai is [Xinhua Road](https://www.google.com/maps/place/Xinhua+Road+Residential+District,+Changning+District,+Shanghai,+China,+200031/@31.2070383,121.412792,14.33z/data=!4m6!3m5!1s0x35b265408d47c867:0x6f051d7525fb7586!8m2!3d31.205077!4d121.426252!16s%2Fg%2F11c2qtwqfz?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D). It's a quiet, tree-lined street with many hidden gems - my #1 recommended place for a city walk in Shanghai.
+
+- In 2022, I moved to Vancouver, and it became my second home as I began pursuing my Ph.D. in Quantitative Marketing at UBC. This multicultural city captivates me in every season, even during its famous "Rain-couver" days. I am very grateful to continue my academic journey in such a beautiful place, embraced by breathtaking scenery and amazing people.
 
 # Fun Facts
+- I started school at age 4½ - because I told my parents I was too bored playing at home (at least that's their side of the story).
 
-- I have a list of thousands of ideas, like creating matching bow ties for cats and humans.
-- I almost always have a sketchbook with me and a [01 Sakura Pigma Micron Pen](https://www.sakuraofamerica.com/product/pigma-micron/).
-- I can't locate every country on a map.
-- I operate a [small angel fund](http://skepticalinvestments.biz/) with terrible returns.
-- I break about 30 traffic laws on a skateboard or [bicycle](https://www.citibikenyc.com/) every single day.
-- I stack-rank coffee shops, restaurants, and every dog I see in New York.
-- I added this page because many people complained that my site was just my resume.
+- Being from southern China, I turn into an excited kid every time it snows - yes, every single time!
 
-# I Dream Of
+- I went from being a coffee maniac (5 espressos a day) to a tea enthusiast overnight.
+
+- I finished the Stawamus Chief full loop in Squamish in 4 hours, including those heart-stopping moments when the "trail" was basically chains bolted to the cliff.
+
+- I love rock climbing not for the climbing part, but for jumping off the wall from heights - maybe that's why skydiving is next on my bucket list.
+
+<!-- # I Dream Of
 
 - Inspiring and feeling inspired.
 - Enabling a brighter future for everyone, regardless of political or socioeconomic status.
 - Treating every individual with genuine kindness and respect.
 - Staying curious.
 - Continually improving.
-- You not checking the commit history for earlier drafts of this file.
+- You not checking the commit history for earlier drafts of this file. -->
 
-# Websites from People I Admire
+<!-- # Websites from People I Admire
 
 - [Alex Peysakhovich](http://alexpeys.github.io/)
 - [Chris Lengerich](http://www.chrislengerich.com/)
@@ -89,4 +59,4 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 - [Tom Sachs](https://www.tomsachs.org/)
 - [Will Holley](https://willholley.com/)
 
-If we are friends and you feel like you belong on this list, you're probably right. Submit a PR, or ask me, and I'll add you.
+If we are friends and you feel like you belong on this list, you're probably right. Submit a PR, or ask me, and I'll add you. -->
