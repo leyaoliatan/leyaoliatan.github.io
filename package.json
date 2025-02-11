@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "4.0.0",
-  "homepage": "https://leyaoliatan.github.io/personal-site/",
+  "homepage": "https://leyaoliatan.github.io/",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run build && react-snap",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "test": "npx jest"
   },
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.25.9",
     "@testing-library/jest-dom": "^5.17.0",

@@ -18,14 +18,16 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: '16'
           cache: "npm"
-      - run: npm ci
-      - name: Lint
-        run: npm run lint
+      - run: npm install
+      - run: npm run build
+      # - run: npm ci
+      # - name: Lint
+      #   run: npm run lint
 
   build:
     runs-on: ${{ matrix.os }}

@@ -34,7 +34,7 @@ const SideBar = () => (
         in digital marketing, fraud prevention, and climate sustainability.
       </p>
       <p>
-        In my free time, I enjoy hiking, rock climbing, painting (watercolor and digital), and{' '}
+        In my free time, I enjoy hiking, rock climbing, painting (watercolor and digital), {' '}
         <a href="https://unsplash.com/@liatan">photography</a>, and exploring teas from around the world.
         I am also a beginner of weightlifting and Muay Thai :).
       </p>
