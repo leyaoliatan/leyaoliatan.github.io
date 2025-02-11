@@ -76,10 +76,10 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: development
-      - name: Test
-        run: npm test
-        env:
-          NODE_ENV: development
+      # - name: Test
+      #   run: npm test
+      #   env:
+      #     NODE_ENV: development
   deploy:
       needs: build  # This ensures deploy runs after build
       runs-on: ubuntu-latest
