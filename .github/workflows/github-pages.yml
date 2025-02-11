@@ -52,11 +52,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3  # Changed to upload-pages-artifact
         with:
           name: github-pages
-          path: build
-          retention-days: 1
+          path: "build"
       
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
         with:
           artifact_name: github-pages
+          path: "build"
