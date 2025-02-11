@@ -80,3 +80,14 @@ jobs:
         run: npm test
         env:
           NODE_ENV: development
+  deploy:
+      needs: build  # This ensures deploy runs after build
+      runs-on: ubuntu-latest
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+      
+      steps:
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v2
