@@ -66,12 +66,16 @@ jobs:
           NODE_ENV: production
           # Remove this line if you would like to skip using google analytics
           REACT_APP_GA_TRACKING_ID: UA-68649021-1
+      - name: Verify build output
+        run: ls -l build  # Debug build folder
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "build"
+          path: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          artifact_name: github-pages
