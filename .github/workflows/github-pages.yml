@@ -45,11 +45,11 @@ jobs:
         uses: actions/configure-pages@v3
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1  # Changed back to v2
+        uses: actions/upload-pages-artifact@v3  # Changed back to v2
         with:
           name: my-artifact-${{ matrix.runs-on }}
           path: 'build'
       
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Changed back to v2
+        uses: actions/deploy-pages@v3  # Changed back to v2
