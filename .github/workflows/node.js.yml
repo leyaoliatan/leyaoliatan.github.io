@@ -10,6 +10,13 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write  # This is crucial for deployment
+  actions: write
+  deployments: write
+  
 jobs:
   lint:
     runs-on: ${{ matrix.os }}
