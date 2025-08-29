@@ -4,7 +4,7 @@ import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
 import Timeline from '../components/Timeline/Timeline';
-import Personal from '../components/Stats/Personal';
+// import Personal from '../components/Stats/Personal';
 
 const About = () => {
   const [markdown, setMarkdown] = useState('');
@@ -24,30 +24,65 @@ const About = () => {
 
   return (
     <Main title="About" description="Learn More about Me">
-      <article className="post markdown" id="about">
-        <header>
+      <article
+        className="post markdown"
+        id="about"
+        style={{
+          maxWidth: '800px',
+          margin: '0 auto',
+          padding: '0 2rem 3rem',
+        }}
+      >
+        <header style={{
+          left: '0',
+          width: '100%',
+          margin: '0 0 2rem 0',
+          borderBottom: 'solid 1px #ddd',
+        }}
+        >
           <div className="title">
             <h2>
-              <Link to="/about">About Me</Link>
+              <Link to="/about"> </Link>
             </h2>
             <p>(in about {count} words)</p>
           </div>
         </header>
-        <div className="timeline-wrapper">
+        <div
+          className="timeline-wrapper"
+          style={{
+            marginTop: '3rem',
+            marginBottom: '4rem',
+          }}
+        >
           <h3 style={{
             textAlign: 'center',
             marginBottom: '2rem',
             color: '#333',
+            fontSize: '1.6rem',
           }}
           >
             My Journey
           </h3>
           <Timeline />
         </div>
-        <div className="markdown-content" style={{ marginTop: '3rem' }}>
+        <div
+          className="markdown-content"
+          style={{
+            marginTop: '4rem',
+            fontSize: '1rem',
+            lineHeight: '1.6',
+          }}
+        >
+          <h3 style={{
+            marginBottom: '1.5rem',
+            fontSize: '1.6rem',
+          }}
+          >
+            Once Upon A Time...
+          </h3>
           <Markdown>{markdown}</Markdown>
         </div>
-        <Personal />
+        {/* <Personal /> */}
       </article>
     </Main>
   );

@@ -33,16 +33,11 @@ const SideBar = () => (
         I am passionate about causal inference and machine learning methods and their application
         in digital marketing, fraud prevention, and climate sustainability.
       </p>
-      <p>
-        In my free time, I enjoy hiking, rock climbing, painting (watercolor and digital), {' '}
-        <a href="https://unsplash.com/@liatan">photography</a>, and exploring teas from around the world.
-        I am also a beginner of weightlifting and Muay Thai :).
-      </p>
       <ul className="actions">
         <li>
           {!window.location.pathname.includes('/about') ? (
             <Link to="/about" className="button">
-              Learn More About Me
+              More Fun Facts About Me
             </Link>
           ) : (
             <Link to="/contact" className="button">
@@ -56,7 +51,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; {new Date().getFullYear()} Leyao Tan. Thanks to <Link to="https://mldangelo.com">Michael D&apos;Angelo</Link> for the template.
+        &copy; {new Date().getFullYear()} Leyao Tan. Thanks to <Link to="https://mldangelo.com">Michael D&apos;Angelo</Link>.
       </p>
     </section>
   </section>

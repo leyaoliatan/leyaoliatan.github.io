@@ -2,19 +2,19 @@ import React from 'react';
 import './Timeline.css';
 
 const timelineData = [
+  // {
+  //   period: '1999-2000',
+  //   location: 'Huangshuang Village',
+  //   image: `${process.env.PUBLIC_URL}/images/timeline/huangshuang.jpg`,
+  // },
+  // {
+  //   period: '2000-2013',
+  //   location: 'Zixing County',
+  //   image: `${process.env.PUBLIC_URL}/images/timeline/zixing.jpg`,
+  // },
   {
-    period: '1999-2000',
-    location: 'Huangshuang Village',
-    image: `${process.env.PUBLIC_URL}/images/timeline/huangshuang.jpg`,
-  },
-  {
-    period: '2000-2013',
-    location: 'Zixing County',
-    image: `${process.env.PUBLIC_URL}/images/timeline/zixing.jpg`,
-  },
-  {
-    period: '2013-2016',
-    location: 'Chenzhou City',
+    period: '1999-2016',
+    location: 'Chenzhou',
     image: `${process.env.PUBLIC_URL}/images/timeline/chenzhou.jpg`,
   },
   {

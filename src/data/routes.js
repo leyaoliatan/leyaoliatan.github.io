@@ -1,29 +1,29 @@
 const routes = [
   {
     index: true,
-    label: 'Leyao (Lia) Tan',
+    label: 'About Me',
     path: '/',
   },
   {
-    label: 'About',
-    path: '/about',
-  },
-  {
-    label: 'Resume',
+    label: 'Education',
     path: '/resume',
   },
-  // {
-  //   label: 'Projects',
-  //   path: '/projects',
-  // },
+  {
+    label: 'Research',
+    path: '/projects',
+  },
   // {
   //   label: 'Stats',
   //   path: '/stats',
   // },
   {
-    label: 'Contact',
-    path: '/contact',
+    label: 'Fun Facts',
+    path: '/about',
   },
+  // {
+  //   label: 'Contact',
+  //   path: '/contact',
+  // },
 ];
 
 export default routes;

@@ -1,26 +1,30 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-
 import Main from '../layouts/Main';
+import MainContent from '../components/MainContent';
 
 const Index = () => (
   <Main
-    description="Welcome to my website."
-    style={{ border: 'none' }}
+    description="Leyao (Lia) Tan's personal website"
+    fullPage
   >
-    {/* <article className="post" id="index">
-      <div className="title">
-        <h2>
-          <Link to="/"> Hi There! </Link>
-        </h2>
-        <p>
-          {' '}
-          Welcome to my website. Please feel free to read more{' '}
-          <Link to="/about">about me</Link>, {' '} or{' '}
-          <Link to="/contact">contact</Link> me.
-        </p>
+    <div
+      className="index-content"
+      style={{
+        width: '100%',
+        maxWidth: '100%',
+        padding: '0 2rem',
+      }}
+    >
+      <div
+        style={{
+          maxWidth: '800px',
+          margin: '0 auto',
+          textAlign: 'center',
+        }}
+      >
+        <MainContent />
       </div>
-    </article> */}
+    </div>
   </Main>
 );
 

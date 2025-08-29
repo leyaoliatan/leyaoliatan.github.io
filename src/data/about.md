@@ -1,4 +1,4 @@
-# I Like
+<!-- # I Like
 - Sunshine
 - Forests and Ocean (and Vancouver has both!)
 - Dogs and Cats (though I don't have any pets yet)
@@ -8,7 +8,7 @@
 - Cycling
 - Weightlifting
 - Hiking
-- Food (I love exploring cuisines from around the world - Persian food is my current favorite)
+- Food (I love exploring cuisines from around the world - Persian food is my current favorite) -->
 
 
 # Once Upon a Time...
@@ -25,9 +25,7 @@
 
 - Being from southern China, I turn into an excited kid every time it snows - yes, every single time!
 
-- I went from being a coffee maniac (5 espressos a day) to a tea enthusiast overnight.
-
-- I finished the Stawamus Chief full loop in Squamish in 4 hours, including those heart-stopping moments when the "trail" was basically chains bolted to the cliff.
+- I love coffee, but not for the caffeine -- a cup of pour-over decaf is my morning ritual.
 
 - I love rock climbing not for the climbing part, but for jumping off the wall from heights - maybe that's why skydiving is next on my bucket list.
 
