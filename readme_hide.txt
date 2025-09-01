@@ -3,7 +3,6 @@ step2: check the files and make changes
 step3: pre deploy by npm run predeploy
 step4: check github - project - action, to see if it runs;
 otherwise, check the github page yml for settings;
-
 ---
 
 the route file defines the nevigation line;
