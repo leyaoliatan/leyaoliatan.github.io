@@ -6,11 +6,11 @@ const routes = [
   },
   {
     label: 'Education',
-    path: '/resume',
+    path: '/education',
   },
   {
     label: 'Research',
-    path: '/projects',
+    path: '/research',
   },
   // {
   //   label: 'Stats',
@@ -18,7 +18,7 @@ const routes = [
   // },
   {
     label: 'Fun Facts',
-    path: '/about',
+    path: '/funfacts',
   },
   // {
   //   label: 'Contact',
