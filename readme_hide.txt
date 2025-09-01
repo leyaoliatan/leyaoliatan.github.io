@@ -12,3 +12,5 @@ layout of all pages is stored in pages;
 there are also some pages defined in component;
 
 the main page is defined in maincontent.js
+
+if you change the name of the route path, you need to change all file names as well!
