@@ -17,10 +17,10 @@ const About = () => {
     });
   }, []);
 
-  const count = markdown
-    .split(/\s+/)
-    .map((s) => s.replace(/\W/g, ''))
-    .filter((s) => s.length).length;
+  // const count = markdown
+  //   .split(/\s+/)
+  //   .map((s) => s.replace(/\W/g, ''))
+  //   .filter((s) => s.length).length;
 
   return (
     <Main title="About" description="Learn More about Me">
@@ -44,7 +44,7 @@ const About = () => {
             <h2>
               <Link to="/about"> </Link>
             </h2>
-            <p>(in about {count} words)</p>
+            {/* <p>(in about {count} words)</p> */}
           </div>
         </header>
         <div
@@ -58,7 +58,6 @@ const About = () => {
             textAlign: 'center',
             marginBottom: '2rem',
             color: '#333',
-            fontSize: '1.6rem',
           }}
           >
             My Journey
@@ -73,13 +72,6 @@ const About = () => {
             lineHeight: '1.6',
           }}
         >
-          <h3 style={{
-            marginBottom: '1.5rem',
-            fontSize: '1.6rem',
-          }}
-          >
-            Once Upon A Time...
-          </h3>
           <Markdown>{markdown}</Markdown>
         </div>
         {/* <Personal /> */}

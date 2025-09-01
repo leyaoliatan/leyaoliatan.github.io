@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ContactIcons from './Contact/ContactIcons';
+import EmailLink from './Contact/EmailLink';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -17,8 +18,8 @@ const MainContent = () => (
       </Link>
       <header>
         <h2 style={{ fontSize: '2rem' }}>Leyao (Lia) Tan</h2>
-        <p style={{ fontSize: '1.3rem' }}>
-          <a href="mailto:leyao.tan@sauder.ubc.ca">leyao.tan@sauder.ubc.ca</a>
+        <p style={{ fontSize: '0.8rem' }}>
+          <EmailLink />
         </p>
       </header>
     </section>

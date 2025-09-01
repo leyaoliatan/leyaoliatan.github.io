@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ContactIcons from '../Contact/ContactIcons';
+import EmailLink from '../Contact/EmailLink';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -14,7 +15,7 @@ const SideBar = () => (
       <header>
         <h2>Leyao (Lia) Tan</h2>
         <p>
-          <a href="leyao.tan@ubc.ca">leyao.tan@sauder.ubc.ca</a>
+          <EmailLink />
         </p>
       </header>
     </section>
