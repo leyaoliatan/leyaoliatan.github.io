@@ -35,13 +35,13 @@ const MainContent = () => (
         <a href="https://en.ruc.edu.cn/">Renmin University of China</a> (RUC).
       </p>
       <p style={{ fontSize: '1.2rem', textAlign: 'left', lineHeight: '1.8' }}>
-        I am passionate about causal inference and machine learning methods and their application
-        in digital marketing, fraud prevention, and climate sustainability.
+        I am interested in Bayesian statistics, causal inference, machine learning
+        methods, and their application in digital marketing, fraud detection, and
+        sustainability.
       </p>
       <p style={{ fontSize: '1.2rem', textAlign: 'left', lineHeight: '1.8' }}>
         In my free time, I enjoy hiking, rock climbing,{' '}
-        <a href="https://unsplash.com/@liatan">photography</a>, and exploring tea/coffee from around the world.
-        I am also a beginner of weightlifting :).
+        <a href="https://unsplash.com/@liatan">photography</a>, painting, and exploring tea and coffee from around the world :).
       </p>
     </section>
 

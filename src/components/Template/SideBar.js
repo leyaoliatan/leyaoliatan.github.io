@@ -23,16 +23,8 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi! I am Leyao. I am a Ph.D. student in Quantitative Marketing at{' '}
+        Hi! I am Leyao (Lia). I am a Ph.D. student in Quantitative Marketing at{' '}
         <a href="https://www.sauder.ubc.ca/">Sauder Business School</a>, University of British Columbia (UBC).
-        I hold a Master of Science in Business Administration (Quant Marketing) from{' '}
-        <a href="https://www.acem.sjtu.edu.cn/en/">Antai College of Economics and Management</a>,
-        Shanghai Jiao Tong University (SJTU) and a bachelor&apos;s degree from{' '}
-        <a href="https://en.ruc.edu.cn/">Renmin University of China</a> (RUC).
-      </p>
-      <p>
-        I am passionate about causal inference and machine learning methods and their application
-        in digital marketing, fraud prevention, and climate sustainability.
       </p>
       <ul className="actions">
         <li>
