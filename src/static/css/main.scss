@@ -131,21 +131,20 @@ p {
 }
 
 .home-grid {
-  align-items: start;
+  align-items: center;
   display: grid;
   gap: clamp(2rem, 6vw, 4.5rem);
-  grid-template-columns: minmax(170px, 0.42fr) minmax(0, 1.58fr);
+  grid-template-columns: minmax(320px, 440px) minmax(0, 1fr);
 }
 
 .profile-column {
-  align-self: start;
+  align-self: center;
 }
 
 .profile-image {
   display: block;
   height: auto;
-  margin-top: 0.32rem;
-  max-width: 220px;
+  max-width: 440px;
   object-fit: contain;
   width: 100%;
 }
@@ -154,7 +153,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
   margin-top: 1.15rem;
+  text-align: center;
 }
 
 .contact-links a {
@@ -362,13 +363,13 @@ p {
 .journey-notes {
   list-style: none;
   margin: 3.2rem 0 0;
-  padding: 0;
+  padding: 0 1.4rem;
 }
 
 .journey-notes li {
-  max-width: 80ch;
-  padding-left: 1.7rem;
+  max-width: none;
   position: relative;
+  width: 100%;
 }
 
 .journey-notes li + li {
@@ -380,10 +381,14 @@ p {
   border-radius: 50%;
   content: "";
   height: 9px;
-  left: 0.15rem;
+  left: -1.25rem;
   position: absolute;
   top: 0.65em;
   width: 9px;
+}
+
+.home-page {
+  padding-top: 4rem;
 }
 
 .not-found-page {
@@ -402,6 +407,11 @@ p {
 
   .site-nav {
     justify-content: flex-start;
+  }
+
+  .home-grid {
+    gap: 2rem;
+    grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
   }
 
   .timeline {
@@ -443,6 +453,10 @@ p {
 @media (max-width: 500px) {
   .site-page {
     padding: 2.5rem 1.25rem 3rem;
+  }
+
+  .home-page {
+    padding-top: 3rem;
   }
 
   .site-nav-link {
