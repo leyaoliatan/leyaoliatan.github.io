@@ -1,31 +1,30 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './layouts/Main'; // fallback for lazy pages
-import './static/css/main.scss'; // All of our styles
+import {
+  BrowserRouter, Navigate, Route, Routes,
+} from 'react-router-dom';
+import './static/css/main.scss';
 
 const { PUBLIC_URL } = process.env;
 
-// Every route - we lazy load so that each page can be chunked
-// NOTE that some of these chunks are very small. We should optimize
-// which pages are lazy loaded in the future.
-const About = lazy(() => import('./pages/About'));
-const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
+const Research = lazy(() => import('./pages/Research'));
+const Teaching = lazy(() => import('./pages/Teaching'));
+const Credentials = lazy(() => import('./pages/Credentials'));
+const FunFacts = lazy(() => import('./pages/FunFacts'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-const Projects = lazy(() => import('./pages/Projects'));
-const Resume = lazy(() => import('./pages/Resume'));
-const Stats = lazy(() => import('./pages/Stats'));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
-    <Suspense fallback={<Main />}>
+    <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/stats" element={<Stats />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/teaching" element={<Teaching />} />
+        <Route path="/credentials" element={<Credentials />} />
+        <Route path="/fun-facts" element={<FunFacts />} />
+        <Route path="/projects" element={<Navigate replace to="/research" />} />
+        <Route path="/resume" element={<Navigate replace to="/credentials" />} />
+        <Route path="/about" element={<Navigate replace to="/fun-facts" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

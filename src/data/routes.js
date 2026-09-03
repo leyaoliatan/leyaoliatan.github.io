@@ -1,29 +1,24 @@
 const routes = [
   {
-    index: true,
-    label: 'About Me',
+    label: 'Home',
     path: '/',
   },
   {
-    label: 'Education',
-    path: '/resume',
+    label: 'Research',
+    path: '/research',
   },
   {
-    label: 'Research',
-    path: '/projects',
+    label: 'Teaching',
+    path: '/teaching',
   },
-  // {
-  //   label: 'Stats',
-  //   path: '/stats',
-  // },
+  {
+    label: 'Credentials',
+    path: '/credentials',
+  },
   {
     label: 'Fun Facts',
-    path: '/about',
+    path: '/fun-facts',
   },
-  // {
-  //   label: 'Contact',
-  //   path: '/contact',
-  // },
 ];
 
 export default routes;

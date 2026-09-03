@@ -1,54 +1,43 @@
 import React from 'react';
-import './Timeline.css';
 
 const timelineData = [
-  // {
-  //   period: '1999-2000',
-  //   location: 'Huangshuang Village',
-  //   image: `${process.env.PUBLIC_URL}/images/timeline/huangshuang.jpg`,
-  // },
-  // {
-  //   period: '2000-2013',
-  //   location: 'Zixing County',
-  //   image: `${process.env.PUBLIC_URL}/images/timeline/zixing.jpg`,
-  // },
   {
-    period: '1999-2016',
+    period: '1999–2016',
     location: 'Chenzhou',
-    image: `${process.env.PUBLIC_URL}/images/timeline/chenzhou.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/site/chenzhou.jpg`,
+    alt: 'Morning mist over Dongjiang Lake',
   },
   {
-    period: '2016-2020',
+    period: '2016–2020',
     location: 'Beijing',
-    image: `${process.env.PUBLIC_URL}/images/timeline/beijing.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/site/beijing.jpg`,
+    alt: 'Sunset at the Summer Palace in Beijing',
   },
   {
-    period: '2020-2022',
+    period: '2020–2022',
     location: 'Shanghai',
     image: `${process.env.PUBLIC_URL}/images/timeline/shanghai.jpg`,
+    alt: 'City lights in Shanghai',
   },
   {
-    period: '2022-Now',
+    period: '2022–Present',
     location: 'Vancouver',
-    image: `${process.env.PUBLIC_URL}/images/timeline/vancouver.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/site/vancouver.jpg`,
+    alt: 'Cherry blossom season at UBC in Vancouver',
   },
 ];
 
 const Timeline = () => (
-  <div className="timeline-container">
-    <div className="timeline">
-      {timelineData.map((item) => (
-        <div key={`timeline-${item.period}`} className="timeline-item">
-          <div className="timeline-image">
-            <img src={item.image} alt={item.location} />
-          </div>
-          <div className="timeline-content">
-            <h3>{item.period}</h3>
-            <p>{item.location}</p>
-          </div>
+  <div className="timeline" aria-label="Personal journey timeline">
+    {timelineData.map((item) => (
+      <div key={`timeline-${item.period}`} className="timeline-item">
+        <div className="timeline-image">
+          <img src={item.image} alt={item.alt} />
         </div>
-      ))}
-    </div>
+        <p className="timeline-period">{item.period}</p>
+        <p className="timeline-place">{item.location}</p>
+      </div>
+    ))}
   </div>
 );
 

@@ -47,8 +47,3 @@ build/
 
 # Nohup
 nohup.out
-
-#no need
-.github/workflows/jekyll-gh-pages.yml
-.github/workflows/static.yml
-readme_hide.txt

@@ -1,8 +1,5 @@
 const config = {
-  moduleNameMapper: {
-    '^.+\\.(css|less|scss)$': 'babel-jest',
-    '^.+\\.md$': 'markdown-to-jsx',
-  },
+  testEnvironment: 'jsdom',
 };
 
 module.exports = config;
