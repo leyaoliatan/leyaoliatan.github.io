@@ -178,17 +178,19 @@ p {
 }
 
 .soft-section {
-  background: var(--primary-soft);
-  border-left: 3px solid var(--primary);
-  padding: 1.25rem 1.35rem;
+  background: var(--white);
+  border-top: 3px solid var(--primary);
+  padding: 1.2rem 1.35rem;
 }
 
 .soft-section h2 {
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   margin-bottom: 0.45rem;
 }
 
 .soft-section p {
+  font-size: 0.88rem;
+  line-height: 1.6;
   margin-bottom: 0;
 }
 
