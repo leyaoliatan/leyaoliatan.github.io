@@ -7,7 +7,6 @@
   --ink: #25313c;
   --muted: #687684;
   --border: #d8e5f0;
-  --header-ink: #10283d;
   --paper: #fbfcfd;
   --white: #ffffff;
   --media-width: 220px;
@@ -68,8 +67,8 @@ p {
 
 .site-header {
   align-items: center;
-  background: var(--primary);
-  border-bottom: 1px solid var(--primary-dark);
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border);
   display: flex;
   gap: 2rem;
   justify-content: space-between;
@@ -80,17 +79,12 @@ p {
 }
 
 .site-brand {
-  color: var(--header-ink);
+  color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
-}
-
-.site-brand:hover {
-  color: var(--header-ink);
-  opacity: 0.78;
 }
 
 .site-nav {
@@ -102,16 +96,15 @@ p {
 
 .site-nav-link {
   border-bottom: 2px solid transparent;
-  color: var(--header-ink);
+  color: var(--muted);
   padding: 0.45rem 0.65rem;
   text-decoration: none;
 }
 
 .site-nav-link:hover,
 .site-nav-link.is-active {
-  background: rgba(255, 255, 255, 0.38);
-  border-bottom-color: var(--header-ink);
-  color: var(--header-ink);
+  border-bottom-color: var(--primary);
+  color: var(--primary-dark);
 }
 
 .site-main {
