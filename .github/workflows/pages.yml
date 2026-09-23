@@ -1,0 +1,91 @@
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.repository == 'leyaoliatan/leyaoliatan.github.io' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate publishing files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import unquote, urlsplit
+          import json
+
+          root = Path('site').resolve()
+          errors = []
+          class Document(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.nodes = []
+              def handle_starttag(self, tag, attrs):
+                  self.nodes.append((tag, dict(attrs)))
+
+          for name in ['index.html', 'fun-facts/index.html', '404.html', 'robots.txt', 'sitemap.xml', 'assets/styles.css', 'assets/site.js']:
+              if not (root / name).is_file():
+                  errors.append(f'Missing file: {name}')
+          for page in root.rglob('*.html'):
+              document = Document()
+              document.feed(page.read_text(encoding='utf-8'))
+              for tag, attrs in document.nodes:
+                  for key in ['src', 'href']:
+                      value = attrs.get(key, '')
+                      if not value or value.startswith('#'):
+                          continue
+                      url = urlsplit(value)
+                      if tag == 'img' and key == 'src' and (url.scheme in ['http', 'https'] or url.netloc):
+                          errors.append(f'Image must be stored locally: {page.relative_to(root)}: {value}')
+                      if url.scheme or url.netloc:
+                          continue
+                      target = root / unquote(url.path).lstrip('/') if url.path.startswith('/') else page.parent / unquote(url.path)
+                      if not target.resolve().is_relative_to(root):
+                          errors.append(f'Path outside site: {value}')
+                      elif not target.exists():
+                          errors.append(f'Missing reference: {page.relative_to(root)}: {value}')
+              if page.relative_to(root).as_posix() in ['index.html', 'fun-facts/index.html']:
+                  robots = [a.get('content', '').lower() for t, a in document.nodes if t == 'meta' and a.get('name') == 'robots']
+                  if not robots or any('noindex' in x for x in robots):
+                      errors.append(f'Public page is not indexable: {page.relative_to(root)}')
+          if (root / 'CNAME').exists():
+              errors.append('Unexpected custom-domain configuration')
+          manifest = json.loads((root / 'site.webmanifest').read_text())
+          for icon in manifest['icons']:
+              if not (root / icon['src']).is_file():
+                  errors.append(f'Missing manifest icon: {icon["src"]}')
+          if errors:
+              raise SystemExit('\n'.join(errors))
+          print('Publishing files validated.')
+          PY
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v5
