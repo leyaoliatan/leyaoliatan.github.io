@@ -22,12 +22,11 @@
   --color-muted: #485f74;
   --color-link: #1d5d9d;
   --color-accent: #408bdd;
-  --color-blue: #eaf5ff;
-  --color-pill: #dcedff;
-  --color-white: #ffffff;
-  --color-canvas: #fcfdff;
-  --color-line: #cbdff0;
-  --color-ring: #d5eaff;
+  --color-blue: #edf3f9;
+  --color-pill: #dfeaf5;
+  --color-line: #cbd9e6;
+  --color-ring: #d7e3ee;
+  --color-canvas: #fafcff;
   --shadow-shell: 0 7px 42px rgba(40, 90, 135, 0.12), 0 1px 6px rgba(40, 90, 135, 0.05);
   --shadow-card: 0 2px 9px rgba(40, 85, 125, 0.055);
   --shadow-hover: 0 7px 19px rgba(40, 85, 125, 0.12);
