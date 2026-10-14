@@ -593,3 +593,54 @@ figcaption { margin-top: 9px; color: var(--color-muted); }
     transition: none;
   }
 }
+
+/* Oxford Blue & Cloud — color-only overrides.
+   Keep after the original styles so HTML and responsive layout stay unchanged. */
+:root {
+  --color-ink: #1C3B5F; --color-text: #40556E; --color-muted: #708299;
+  --color-link: #366C9D; --color-accent: #7DA7CB;
+  --color-blue: #EDF4FC; --color-pill: #E5EFF9;
+  --color-white: #FFFFFF; --color-canvas: #FFFFFF;
+  --color-line: #D4E1EC; --color-ring: #B7CEE2;
+  --shadow-shell: 0 7px 42px rgba(18,39,67,.095), 0 1px 6px rgba(18,39,67,.04);
+  --shadow-card: 0 2px 9px rgba(18,39,67,.055);
+  --shadow-hover: 0 7px 19px rgba(18,39,67,.12);
+  --theme-hero: #17385E; --theme-hero-link: #C5E2F8;
+  --theme-hero-accent: #AACEEA; --theme-hero-ring: #BDD3E8;
+  --theme-hero-text: #FFFFFF; --theme-hero-soft-text: #EFF6FC;
+  --theme-logo-filter: brightness(0) invert(1);
+  --theme-hover-background: rgba(255,255,255,.12);
+  --theme-hero-hover-link: #FFFFFF;
+}
+.site-header { background: var(--theme-hero); border-bottom-color: rgba(255,255,255,.19); }
+.site-header .site-brand, .site-header .nav-link { color: var(--theme-hero-text); }
+.site-header .brand-icon { filter: var(--theme-logo-filter); }
+.site-header .nav-link[aria-current], .site-header .nav-link:hover {
+  color: var(--theme-hero-accent); background: var(--theme-hover-background);
+}
+.site-header .site-brand:hover { color: var(--theme-hero-accent); }
+.home-section { background: var(--theme-hero); color: var(--theme-hero-soft-text); }
+.home-section .home-copy .type-name,
+.home-section .home-copy .type-affiliation,
+.home-section .home-copy .type-affiliation span,
+.home-section .home-copy strong { color: var(--theme-hero-text); }
+.home-section a, .home-section .contact-icon--linkedin { color: var(--theme-hero-link); }
+.home-section a:hover { color: var(--theme-hero-hover-link); }
+.home-section .portrait { border-color: var(--theme-hero-ring); background: var(--color-white); }
+.site-shell { border-color: var(--color-line); }
+.gp-signature { background: var(--color-white); border-color: var(--color-line); }
+.gp-sample--1, .gp-sample--3, .gp-sample--5 { stroke: var(--color-link); }
+.gp-sample--2, .gp-sample--4 { stroke: var(--color-accent); }
+.gp-signature__label { color: var(--color-muted); }
+.record-list--timeline > .record-row:not(:last-child)::after { background: var(--color-line); }
+.site-footer { background: var(--theme-hero); border-top-color: rgba(255,255,255,.19); }
+.site-footer .site-brand, .site-footer .back-link, .site-footer .footer-inner p { color: var(--theme-hero-text); }
+.site-footer .back-link:hover, .site-footer .site-brand:hover { color: var(--theme-hero-accent); }
+@media print {
+  .home-section { background: #FFF; color: #222; }
+  .home-section .home-copy .type-name,
+  .home-section .home-copy .type-affiliation,
+  .home-section .home-copy .type-affiliation span,
+  .home-section .home-copy strong { color: #222; }
+  .home-section a { color: #17456C; }
+}
