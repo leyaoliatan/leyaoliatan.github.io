@@ -644,3 +644,6 @@ figcaption { margin-top: 9px; color: var(--color-muted); }
   .home-section .home-copy strong { color: #222; }
   .home-section a { color: #17456C; }
 }
+
+.site-footer .footer-email { color: var(--theme-hero-text); display: inline-block; }
+.site-footer .footer-email:hover { color: var(--theme-hero-accent); }
