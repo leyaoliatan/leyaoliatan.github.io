@@ -608,7 +608,7 @@ figcaption { margin-top: 9px; color: var(--color-muted); }
   --theme-hero: #17385E; --theme-hero-link: #C5E2F8;
   --theme-hero-accent: #AACEEA; --theme-hero-ring: #BDD3E8;
   --theme-hero-text: #FFFFFF; --theme-hero-soft-text: #EFF6FC;
-  --theme-logo-filter: brightness(0) invert(1);
+  --theme-logo-filter: invert(1);
   --theme-hover-background: rgba(255,255,255,.12);
   --theme-hero-hover-link: #FFFFFF;
 }
