@@ -35,7 +35,7 @@
   --shadow-shell: 0 7px 42px rgba(40, 90, 135, 0.12), 0 1px 6px rgba(40, 90, 135, 0.05);
   --shadow-card: 0 2px 9px rgba(40, 85, 125, 0.055);
   --shadow-hover: 0 7px 19px rgba(40, 85, 125, 0.12);
-  --site-width: 1360px;
+  --site-width: 1760px;
   --page-padding: 58px;
   --section-space: 34px;
   --header-height: 80px;
@@ -85,7 +85,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px soli
 [hidden] { display: none !important; }
 img { max-width: 100%; display: block; }
 .site-shell {
-  width: min(var(--site-width), calc(100% - 80px));
+  width: min(var(--site-width), calc(100% - 48px));
   margin-inline: auto;
   background: var(--color-white);
   box-shadow: var(--shadow-shell);
@@ -151,7 +151,7 @@ section[id], main[id] { scroll-margin-top: calc(var(--header-height) + 18px); }
 .affiliation { margin-bottom: 23px; }
 .affiliation span { display: block; }
 .affiliation span + span { margin-top: 2px; }
-.home-copy > p:not(.affiliation) { margin-bottom: 12px; }
+.home-copy > p:not(.affiliation) { margin-bottom: 12px; font-size: calc(var(--size-affiliation) - 0.125rem); }
 .home-copy > p:last-child { margin-bottom: 0; }
 .home-copy > p.greeting { margin-bottom: 4px; }
 .band { padding-block: var(--section-space); }
@@ -594,31 +594,32 @@ figcaption { margin-top: 9px; color: var(--color-muted); }
   }
 }
 
-/* Oxford Blue & Cloud — color-only overrides.
+/* Oxford bar & Mist — color-only overrides.
    Keep after the original styles so HTML and responsive layout stay unchanged. */
 :root {
   --color-ink: #1C3B5F; --color-text: #40556E; --color-muted: #708299;
   --color-link: #366C9D; --color-accent: #7DA7CB;
-  --color-blue: #EDF4FC; --color-pill: #E5EFF9;
+  --color-blue: #E7EFF7; --color-pill: #E7EFF7;
   --color-white: #FFFFFF; --color-canvas: #FFFFFF;
   --color-line: #D4E1EC; --color-ring: #B7CEE2;
   --shadow-shell: 0 7px 42px rgba(18,39,67,.095), 0 1px 6px rgba(18,39,67,.04);
   --shadow-card: 0 2px 9px rgba(18,39,67,.055);
   --shadow-hover: 0 7px 19px rgba(18,39,67,.12);
-  --theme-hero: #17385E; --theme-hero-link: #C5E2F8;
-  --theme-hero-accent: #AACEEA; --theme-hero-ring: #BDD3E8;
-  --theme-hero-text: #FFFFFF; --theme-hero-soft-text: #EFF6FC;
+  --theme-bar: #17385E; --theme-bar-text: #FFFFFF; --theme-bar-accent: #AACEEA;
+  --theme-bar-hover-background: rgba(255,255,255,.12);
+  --theme-hero: var(--color-blue); --theme-hero-link: #1F5A8F;
+  --theme-hero-ring: #9DBAD6;
+  --theme-hero-text: #17385E; --theme-hero-soft-text: #2F4560;
   --theme-logo-filter: none;
-  --theme-hover-background: rgba(255,255,255,.12);
-  --theme-hero-hover-link: #FFFFFF;
+  --theme-hero-hover-link: #17385E;
 }
-.site-header { background: var(--theme-hero); border-bottom-color: rgba(255,255,255,.19); }
-.site-header .site-brand, .site-header .nav-link { color: var(--theme-hero-text); }
+.site-header { background: var(--theme-bar); border-bottom-color: rgba(255,255,255,.19); }
+.site-header .site-brand, .site-header .nav-link { color: var(--theme-bar-text); }
 .site-header .brand-icon { filter: var(--theme-logo-filter); }
 .site-header .nav-link[aria-current], .site-header .nav-link:hover {
-  color: var(--theme-hero-accent); background: var(--theme-hover-background);
+  color: var(--theme-bar-accent); background: var(--theme-bar-hover-background);
 }
-.site-header .site-brand:hover { color: var(--theme-hero-accent); }
+.site-header .site-brand:hover { color: var(--theme-bar-accent); }
 .home-section { background: var(--theme-hero); color: var(--theme-hero-soft-text); }
 .home-section .home-copy .type-name,
 .home-section .home-copy .type-affiliation,
@@ -633,9 +634,9 @@ figcaption { margin-top: 9px; color: var(--color-muted); }
 .gp-sample--2, .gp-sample--4 { stroke: var(--color-accent); }
 .gp-signature__label { color: var(--color-muted); }
 .record-list--timeline > .record-row:not(:last-child)::after { background: var(--color-line); }
-.site-footer { background: var(--theme-hero); border-top-color: rgba(255,255,255,.19); }
-.site-footer .site-brand, .site-footer .back-link, .site-footer .footer-inner p { color: var(--theme-hero-text); }
-.site-footer .back-link:hover, .site-footer .site-brand:hover { color: var(--theme-hero-accent); }
+.site-footer { background: var(--theme-bar); border-top-color: rgba(255,255,255,.19); }
+.site-footer .site-brand, .site-footer .back-link, .site-footer .footer-inner p { color: var(--theme-bar-text); }
+.site-footer .back-link:hover, .site-footer .site-brand:hover { color: var(--theme-bar-accent); }
 @media print {
   .home-section { background: #FFF; color: #222; }
   .home-section .home-copy .type-name,
@@ -645,5 +646,5 @@ figcaption { margin-top: 9px; color: var(--color-muted); }
   .home-section a { color: #17456C; }
 }
 
-.site-footer .footer-email { color: var(--theme-hero-text); display: inline-block; }
-.site-footer .footer-email:hover { color: var(--theme-hero-accent); }
+.site-footer .footer-email { color: var(--theme-bar-text); display: inline-block; }
+.site-footer .footer-email:hover { color: var(--theme-bar-accent); }
