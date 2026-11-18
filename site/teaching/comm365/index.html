@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>COMM 365: Market Research | Leyao (Lia) Tan</title>
+<meta content="COMM 365 Section 203, Market Research, UBC Sauder, January–April 2027: course introduction, calendar and weekly schedule." name="description"/>
+<meta content="noindex" name="robots"/>
+<meta content="#E7EFF7" name="theme-color"/>
+<link href="../../assets/icons/monogram.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/icons/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../../assets/styles.css" rel="stylesheet"/>
+<link href="course.css" rel="stylesheet"/>
+<script defer="" src="../../assets/site.js"></script>
+<style>
+  .b-intro { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 40px; align-items: start; }
+  .b-card { background: var(--color-white); border: 1px solid var(--color-ring); border-radius: 7px; box-shadow: var(--shadow-card); padding: 20px 22px; }
+  .b-cal-wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 3fr); gap: 32px; align-items: start; }
+  .b-term { display: grid; grid-template-columns: 74px repeat(7, minmax(0, 1fr)); gap: 3px; }
+  .b-term .c365-cell { aspect-ratio: auto; height: 40px; }
+  .b-wk { font-family: var(--font-label); font-size: .6875rem; font-weight: 700; color: var(--color-muted); display: flex; align-items: center; letter-spacing: .04em; }
+  .b-wk span { color: var(--color-ink); margin-right: 6px; }
+  .b-detail { position: sticky; top: calc(var(--header-height) + 20px); }
+  .b-table { width: 100%; border-collapse: collapse; }
+  .b-table th { text-align: left; font-family: var(--font-label); font-size: var(--size-label); letter-spacing: .09em; text-transform: uppercase; color: var(--color-link); padding: 0 12px 10px 0; border-bottom: 2px solid var(--color-ink); }
+  .b-table td { vertical-align: top; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--color-line); }
+  .b-table tr.b-week-start td { border-top: 2px solid var(--color-line); }
+  .b-table .b-wcol { width: 64px; color: var(--color-ink); font-weight: 700; }
+  .b-table .b-dcol { width: 110px; white-space: nowrap; color: var(--color-muted); }
+  .b-table .b-duecol { width: 36%; }
+  .b-table .c365-due-list { flex-direction: column; align-items: flex-start; }
+  .b-table .c365-due { display: grid; grid-template-columns: 3.6em minmax(0, 1fr); gap: 0 6px; border-radius: 12px; }
+  .b-table .c365-due strong { white-space: nowrap; }
+  .b-title { color: var(--color-ink); font-weight: 700; }
+  .b-toggle { all: unset; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; color: var(--color-ink); font-weight: 700; }
+  .b-toggle:hover { color: var(--color-link); }
+  .b-toggle:focus-visible { outline: 2px solid var(--color-link); outline-offset: 4px; border-radius: 3px; }
+  .b-toggle .disclosure-chevron { color: var(--color-link); }
+  .b-toggle[aria-expanded="true"] .disclosure-chevron { transform: rotate(135deg); }
+  .b-body { margin-top: 8px; }
+  .b-off td { color: var(--color-muted); font-style: italic; background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(220,226,233,.45) 6px 8px); }
+  .b-tools { display: flex; gap: 10px; margin-bottom: 14px; }
+  .b-tools button { border: 1px solid var(--color-line); background: var(--color-white); border-radius: var(--pill-radius); padding: 4px 12px; color: var(--color-link); cursor: pointer; }
+  @media (max-width: 1050px) {
+    .b-intro, .b-cal-wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    .b-detail { position: static; }
+  }
+  @media (max-width: 780px) {
+    .b-table thead { display: none; }
+    .b-table, .b-table tbody, .b-table tr, .b-table td { display: block; width: auto !important; }
+    .b-table tr { padding: 12px 0; border-bottom: 1px solid var(--color-line); }
+    .b-table td { border: 0; padding: 2px 0; }
+    .b-table tr.b-week-start td { border-top: 0; }
+    .b-table .b-wcol:empty { display: none; }
+    .b-table .b-wcol, .b-table .b-dcol { display: inline-block; margin-right: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="site-shell">
+<a class="skip-link type-body" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="section-inner header-inner">
+<a class="site-brand type-brand" href="../../index.html#home"><img alt="" class="brand-icon" height="42" src="../../assets/icons/monogram.svg" width="38"/><span>Leyao Tan</span></a>
+<nav aria-label="Main navigation" class="site-nav"><a class="nav-link type-nav" href="../../index.html#home">Home</a><a class="nav-link type-nav" href="../../index.html#research">Research</a><a class="nav-link type-nav" href="../../index.html#awards">Awards &amp; Honors</a><a aria-current="page" class="nav-link type-nav" href="../../index.html#teaching">Teaching</a><a class="nav-link type-nav" href="../../fun-facts/index.html">Fun Facts</a></nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<section aria-labelledby="course-title" class="band c365-hero" id="introduction">
+  <div class="section-inner b-intro">
+    <div>
+      <h1 class="type-name" id="course-title">COMM 365: Market Research</h1>
+      <p class="type-affiliation c365-term">Section 203 · January–April 2027</p>
+      <div class="c365-intro type-body" id="intro"></div>
+    </div>
+    <aside class="b-card" aria-label="Course details"><dl class="c365-facts type-meta" id="facts"></dl></aside>
+  </div>
+</section>
+
+<section aria-labelledby="calendar-heading" class="band" id="calendar">
+  <div class="section-inner">
+    <h2 class="section-title type-section" id="calendar-heading">Term Calendar</h2>
+    <div id="legend"></div>
+    <div class="b-cal-wrap">
+      <div class="b-term" id="term" role="group" aria-label="Term calendar by week"></div>
+      <div class="c365-detail type-meta b-detail" id="detail" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="schedule-heading" class="band band--blue" id="schedule">
+  <div class="section-inner">
+    <h2 class="section-title type-section" id="schedule-heading">Schedule</h2>
+    <div class="b-tools type-meta"><button type="button" id="open-all">Expand all</button><button type="button" id="close-all">Collapse all</button></div>
+    <table class="b-table type-meta">
+      <thead><tr><th>Week</th><th>Date</th><th>Lecture</th><th>Due</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="type-caption c365-muted" id="due-note" style="margin-top:12px"></p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="section-inner footer-inner">
+<a class="site-brand type-brand footer-brand" href="../../index.html#home"><span class="footer-cube-wrap" aria-hidden="true"><span class="footer-cube"><span class="cube-face cube-face--front">L</span><span class="cube-face cube-face--back"></span><span class="cube-face cube-face--right">T</span><span class="cube-face cube-face--left"></span><span class="cube-face cube-face--top"></span><span class="cube-face cube-face--bottom"></span></span></span><span>Leyao Tan</span></a>
+<p class="type-caption">© 2026 Leyao Tan <span aria-hidden="true">·</span> <a class="footer-email" href="mailto:leyao.tan@sauder.ubc.ca">leyao.tan@sauder.ubc.ca</a></p>
+<a class="type-meta back-link" href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+</div>
+</footer>
+</div>
+<script src="course-data.js"></script>
+<script src="course.js"></script>
+<script>
+(() => {
+  const { D, weeks, short, withDay, addDays, day, dayClasses, dayLabel, iso, parse, lectureName, shownReadings, readingsHtml, legendHtml, dayDetail } = window.C365;
+  const c = D.course;
+  document.getElementById("intro").innerHTML = c.intro.map((p) => `<p>${p}</p>`).join("");
+  document.getElementById("facts").innerHTML = `
+    <dt>Term</dt><dd>${c.term}</dd>
+    <dt>Schedule</dt><dd>${c.schedule}</dd>
+    <dt>Location</dt><dd>${c.location}</dd>
+    <dt>Instructor</dt><dd>${c.instructor}</dd>
+    <dt>Contact</dt><dd><a href="mailto:${c.email}?subject=${encodeURIComponent("[COMM 365] ")}">${c.email}</a><br><span class="c365-muted">${c.emailNote}</span></dd>`;
+  document.getElementById("legend").innerHTML = legendHtml();
+  document.getElementById("due-note").textContent = c.allDueTimes;
+
+  // one row per week, Monday to Sunday
+  const term = document.getElementById("term");
+  let html = `<span></span>${["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((x) => `<span class="c365-head">${x}</span>`).join("")}`;
+  for (let mon = D.range.start; mon <= D.range.end; mon = addDays(mon, 7)) {
+    const w = window.C365.weekOf(mon);
+    const label = w <= 15 ? `<span>W${w}</span>` : `<span>&nbsp;</span>`;
+    html += `<div class="b-wk">${label}${short(mon)}</div>`;
+    for (let i = 0; i < 7; i += 1) {
+      const s = addDays(mon, i);
+      const info = day(s);
+      const cls = dayClasses(info);
+      const n = parse(s).getDate();
+      html += cls.length
+        ? `<button type="button" class="c365-cell ${cls.join(" ")}" data-date="${s}" title="${dayLabel(info).replace(/"/g, "&quot;")}" aria-label="${withDay(s)}: ${dayLabel(info).replace(/"/g, "&quot;")}">${n}</button>`
+        : `<span class="c365-cell">${n}</span>`;
+    }
+  }
+  term.innerHTML = html;
+  const detail = document.getElementById("detail");
+  const show = (s, btn) => {
+    term.querySelectorAll("[aria-pressed]").forEach((x) => x.removeAttribute("aria-pressed"));
+    if (btn) btn.setAttribute("aria-pressed", "true");
+    detail.innerHTML = dayDetail(s);
+  };
+  term.addEventListener("click", (e) => { const b = e.target.closest("button[data-date]"); if (b) show(b.dataset.date, b); });
+  const today = iso(new Date());
+  const next = D.lectures.find((l) => l.date >= today) || D.lectures[0];
+  show(next.date, term.querySelector(`[data-date="${next.date}"]`));
+
+  const dueCell = (list) => list.length ? `<ul class="c365-due-list" role="list" style="margin:0">${list.map((x) => `<li class="c365-due${x.kind === "survey" ? " c365-due--survey" : ""}"><strong>${short(x.date)}</strong> ${x.title}</li>`).join("")}</ul>` : "";
+  let rows = "";
+  weeks().forEach((w) => {
+    const items = [...w.lectures.map((l) => ({ date: l.date, l })), ...w.off.map((o) => ({ date: o.start, o }))].sort((a, b) => a.date.localeCompare(b.date));
+    items.forEach((it, i) => {
+      const first = i === 0;
+      const wcell = first ? `W${w.week}` : "";
+      const due = first ? dueCell(w.deadlines) : "";
+      if (it.o) {
+        rows += `<tr class="b-off${first ? " b-week-start" : ""}"><td class="b-wcol">${wcell}</td><td class="b-dcol">${it.o.start === it.o.end ? withDay(it.o.start) : `${short(it.o.start)}–${short(it.o.end)}`}</td><td>No class: ${it.o.title}</td><td class="b-duecol">${due}</td></tr>`;
+        return;
+      }
+      const l = it.l;
+      const id = `lec-${l.date}`;
+      const readings = shownReadings(l);
+      const title = readings.length
+        ? `<button class="b-toggle" type="button" aria-expanded="false" aria-controls="${id}"><span>${lectureName(l)}</span><span aria-hidden="true" class="disclosure-chevron"></span></button>
+          <div class="b-body" id="${id}" hidden><p class="c365-sub" style="margin-top:4px">Optional readings</p>${readingsHtml(readings)}</div>`
+        : `<span class="b-title">${lectureName(l)}</span>`;
+      rows += `<tr class="${first ? "b-week-start" : ""}"><td class="b-wcol">${wcell}</td><td class="b-dcol">${withDay(l.date)}</td><td>${title}</td><td class="b-duecol">${due}</td></tr>`;
+    });
+  });
+  const tbody = document.getElementById("rows");
+  tbody.innerHTML = rows;
+  const setOpen = (btn, open) => { btn.setAttribute("aria-expanded", String(open)); document.getElementById(btn.getAttribute("aria-controls")).hidden = !open; };
+  tbody.addEventListener("click", (e) => { const b = e.target.closest(".b-toggle"); if (b) setOpen(b, b.getAttribute("aria-expanded") !== "true"); });
+  document.getElementById("open-all").onclick = () => tbody.querySelectorAll(".b-toggle").forEach((b) => setOpen(b, true));
+  document.getElementById("close-all").onclick = () => tbody.querySelectorAll(".b-toggle").forEach((b) => setOpen(b, false));
+})();
+</script>
+</body>
+</html>
